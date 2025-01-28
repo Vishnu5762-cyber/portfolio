@@ -1,0 +1,111 @@
+.about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.about-title{
+    position:relative;
+}
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 65px;
+    font-weight: 600;
+    background: linear-gradient(270deg,#b415ff 10%, #df8908 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-sections{
+    display:flex;
+    gap:80px;
+
+}
+
+.about-right{
+    display:flex;
+    flex-direction: column;
+    gap:60px;
+
+}
+.about-para{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about-education{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.about-education h2{
+    font-size: 40px;
+    font-weight: 600;
+ background: linear-gradient(270deg,#bb7204 10%, #53226a 100%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+
+.about-education1 h3{
+    font-size: 30px;
+    font-weight: 600;
+ background: linear-gradient(250deg,#9a553c 10%, #742b42 100%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.about-education1 p{
+    font-size: 20px;
+    font-weight:400;
+}
+.about-education1 p span{
+ background: linear-gradient(270deg,#b415ff 10%, #9c6614 100%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.about-education1 strong{
+    color: rgb(203, 41, 179);
+
+
+}
+
+@media(max-width:768px){
+    .about{
+    
+        gap: 30px;
+        margin:50px 20px;
+        align-items: start;
+    }
+    .about-title h1{
+       font-size: 50px;
+       padding:0;
+    }
+    .about-title img{
+        width:130px;
+        right:-20px;
+
+    }
+    .about-sections{
+        flex-direction: column;
+
+    }
+    .about-para{
+        margin-top: -40px;
+        font-size: 18px;
+        line-height :28px;
+    }
+
+    
+    
+}

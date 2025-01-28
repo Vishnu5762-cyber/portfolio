@@ -1,0 +1,109 @@
+.certifications{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px 100px;
+
+}
+.certification-title{
+    position: relative;
+}
+
+.certification-title h1{
+    text-align: center;
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight:600;
+    background: linear-gradient(270deg,#b415ff 10%, #df8908 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.certification-format{
+    display: flex;
+    gap: 20px;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.certification-format img{
+    padding:10px;
+    border-radius: 10px;
+    border: 2px solid white
+}
+.certification-format1{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 20px;
+}
+.certification-container{
+    
+    gap: 40px;
+    margin-bottom: 50px;
+    padding: 60px;
+}
+.certificate-format1 h3{
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #cb3b07 40%,#539009 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.certificate-format1 h2{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #df8908 50%,#b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.certificate-format1 p{
+    color: #d4d4d4;
+    font-size: 18px;
+}
+.certification-format img:hover{
+    border-color:#df8908
+}
+
+@media(max-width:768px){
+    .certifications
+    {
+        gap: 30px;
+        margin:20px 20px;
+        align-items: start;
+    
+    }
+    .certification-title h1{
+        font-size: 50px;
+       padding: 0px;
+        text-align: start;
+        margin-bottom: 30px;
+    }
+    .certification-format{
+        display:flex;
+        flex-direction:column;
+    }
+    .certification-container{
+        align-items: start;
+        padding:0;
+    }
+    .certification-format img { 
+        width:300px;
+        height:200px;
+
+    }
+    .certificate-format1 h2{
+        font-size: 26px;
+    }
+    .certificate-format1 h3{
+        font-size:20px;
+    }
+    .certificate-format1 p{
+        font-size:16px;
+    }
+}

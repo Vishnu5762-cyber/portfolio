@@ -1,0 +1,88 @@
+.skills{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    
+}
+.skills h2{
+    text-align: center;
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight:600;
+    background: linear-gradient(270deg,#b415ff 10%, #df8908 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill h3{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #df8908 50%,#6c1d91 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.skill-summary{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.about-skill-summary{
+    display:flex;
+    align-items: center;
+    gap: 50px;
+    transition: 0.3s;
+}
+.about-skill-summary p{
+    min-width: 170px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.about-skill-summary hr{
+    outline:none;
+    border:none;
+    height:8px;
+    
+    border-radius: 50px;
+    background: linear-gradient(264deg,  #b415ff -5.908%, #df8908 106.28%);
+}
+.about-skill-summary:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+    @media(max-width:768px){
+        .skills {
+            gap: 20px;
+            margin: 50px 20px; /* Reduce margin for better fit */
+        }
+        .skills h2 {
+            text-align: start;
+            padding: 0px;
+            font-size: 50px;
+        }
+        .skill h3 {
+            font-size: 25px;
+        }
+        .about-skill-summary {
+            align-items: center;
+            gap: 20px; /* Reduce gap for mobile */
+        }
+        .about-skill-summary p {
+            min-width: 100px; /* Adjust width to fit */
+            font-size: 16px; /* Slightly smaller text */
+        }
+        .about-skill-summary hr {
+            height: 4px; /* Consistent thickness */
+            width: 100%; /* Full width in its container */
+            max-width: 90%; /* Optional: Control max width */
+            border-radius: 3px;
+            margin: 0; /* Remove default margins */
+            background: linear-gradient(264deg, #b415ff -5.908%, #df8908 106.28%);
+        }
+    }
